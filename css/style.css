@@ -46,10 +46,6 @@ header {
 }
 
 .logo{
-    display:flex;
-    justify-content:center;
-    align-content:center;
-    list-style-type:none;   
     flex-basis:50%;
 }
 
@@ -94,16 +90,12 @@ header {
 }
 
 /*immagine n.2 nascosta*/
-.hidden-image{
+.hidden-image, .product:hover img{
     display:none;
 }
 
 .product:hover .hidden-image{
     display:block;
-}
-
-.product:hover img{
-    display:none;
 }
 
 /*label sconto e sostenitibilità*/
@@ -113,23 +105,21 @@ header {
     bottom:15%;
 }
 
+.discount, .sustainability, .heart{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    z-index: 5;
+    padding: 5px;
+}
+
 .discount {
-    position:absolute;
     background-color:red;
-    color:white;
-    font-weight:bold;
-    padding:5px;
-    z-index:5;
 }
 
 .sustainability{
-    position:absolute;
     background-color:green;
-    color:white;
-    font-weight:bold;
     left:18%;
-    padding:5px;
-    z-index:5;
 }
 
 .sustainability.only-green{
@@ -139,12 +129,10 @@ header {
 
 /*cuore*/
 .heart {
-    position:absolute;
     top:2%;
     right:0;
     background-color:white;
-    padding:5px;
-    z-index:5;
+    color:black;
 }
 
 /*descrizione sotto immagine*/
