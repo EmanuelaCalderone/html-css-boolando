@@ -85,7 +85,7 @@ header {
 }
 
 /*immagini*/
-.product img {
+.product img, .hidden-image {
     max-width:100%;
 }
 
@@ -95,7 +95,7 @@ header {
 }
 
 .product:hover .hidden-image{
-    display:block;
+    display:inline-block;
 }
 
 /*label sconto e sostenitibilità*/
